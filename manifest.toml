@@ -17,7 +17,7 @@ website = "https://example.com"
 demo = "https://demo.example.com"
 admindoc = "https://doc.yunohost.org/dev/packaging/"
 userdoc = "https://yunohost.org/apps"
-code = "https://github.com/markqvist/nomadnet"
+code = "https://github.com/markqvist/lxmf"
 
 
 [integration]
