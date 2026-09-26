@@ -1,5 +1,0 @@
-#!/bin/bash
-exec $install_dir/venv/bin/nomadnet \
-    --config $install_dir/.nomadnetwork \
-    --rnsconfig $install_dir/.reticulum \
-    "$@"
