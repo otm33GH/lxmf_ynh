@@ -34,7 +34,14 @@ ram.build = "50M"
 ram.runtime = "50M"
 
 [install]
-
+    [install.reticulum]
+    type = "app"
+    filter = "match(id, '^(reticulum)(__[0-9+])?$')"
+    ask.en = "Select the Reticulum app to be used with LXMF."
+    ask.fr = "Sélectionnez l'app Reticulum qui sera utilisée avec LXMF."
+    help.en = "You need to have aan instance of Reticulum installed beforehand on your server."
+    help.fr = "Vous devez avoir une instance de Reticulum préalablement installée sur votre serveur."
+    
     [install.tcp_shared_instance]
     ask.en = "Enable TCP shared instance"
     type = "boolean"
