@@ -35,6 +35,11 @@ ram.runtime = "50M"
 
 [install]
 
+    [install.tcp_shared_instance]
+    ask.en = "Enable TCP shared instance"
+    type = "boolean"
+    default = false
+
 [resources]
     [resources.system_user]
 
