@@ -33,6 +33,8 @@ ynh_config_add_systemd
 yunohost service add "$app" --description="LXMF Daemon" --log="/var/log/$app/$app.log"
 ynh_config_add_logrotate
 
+systemctl restart reticulum
+
 #=================================================
 # END OF SCRIPT
 #=================================================
