@@ -44,16 +44,18 @@
   # is the case, you can isolate different instances by
   # specifying a unique set of ports for each:
   
-  shared_instance_port = 37428
-  instance_control_port = 37429
-
-  
-  # If you want to explicitly use TCP for shared instance
-  # communication, instead of domain sockets, this is also
-  # possible, by using the following option:
-  
+{% if tcp_shared_instance == '1' %}
+  shared_instance_port = {{ port_shared_instance }}
+  instance_control_port = {{ port_instance_control }}
   shared_instance_type = tcp
   rpc_key = {{ rpc_key }}
+{% else %}
+  # shared_instance_port = {{ port_shared_instance }}
+  # instance_control_port = {{ port_instance_control }}
+  # shared_instance_type = tcp
+  # rpc_key = {{ rpc_key }}
+{% endif %}
+
   
   # You can configure whether Reticulum should discover
   # available interfaces from other Transport Instances over
