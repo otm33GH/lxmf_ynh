@@ -6,7 +6,7 @@
 
 # Whether to enable propagation node
 
-enable_node = no
+enable_node = yes
 
 # You can specify identity hashes for remotes
 # that are allowed to control and query status
@@ -170,7 +170,7 @@ auth_required = no
 # that it can receive messages on. This option sets
 # the announced display name for this destination.
 
-display_name = Anonymous Peer
+display_name = {{ hostname }}_{{ app }}
 
 # It is possible to announce the internal LXMF
 # destination when the LXM Daemon starts up.
